@@ -1,0 +1,25 @@
+
+{
+  "name": "sparkleflow-crm",
+  "version": "1.0.0",
+  "description": "Cleaning Company Management System",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.12.0",
+    "@google/genai": "^1.39.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}
