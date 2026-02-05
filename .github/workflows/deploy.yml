@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Removed cache: 'npm' because it requires a package-lock.json which might not be present yet
 
       - name: Install dependencies
         run: npm install
@@ -40,7 +40,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This is the key fix: we deploy the 'dist' folder created by the build
           path: './dist'
 
       - name: Deploy to GitHub Pages
